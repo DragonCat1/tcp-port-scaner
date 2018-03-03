@@ -1,0 +1,44 @@
+{
+  "name": "tcp-port-scaner",
+  "version": "0.0.1",
+  "description": "A Multi Thread TCP Port Scaner",
+  "author": "DragonCat",
+  "license": "MIT",
+  "main": "build/index.js",
+  "dependencies": {
+    "commander": "^8.1.0",
+    "ip": "^1.1.5"
+  },
+  "devDependencies": {
+    "@types/ip": "^1.1.0",
+    "@types/node": "^16.4.5",
+    "@typescript-eslint/eslint-plugin": "^4.28.5",
+    "@typescript-eslint/parser": "^4.28.5",
+    "eslint": "^7.31.0",
+    "typescript": "^4.3.5"
+  },
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "rm -rf build && tsc"
+  },
+  "bin": {
+    "portscan": "./build/cli.js"
+  },
+  "files": [
+    "build"
+  ],
+  "types": "build/types/index.d.ts",
+  "homepage": "https://github.com/DragonCat1/tcp-port-scaner",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:DragonCat1/tcp-port-scaner.git"
+  },
+  "keywords": [
+    "port scan",
+    "scaner",
+    "tcp",
+    "network",
+    "cli",
+    "tool"
+  ]
+}
