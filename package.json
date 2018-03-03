@@ -1,0 +1,44 @@
+{
+  "name": "tcp-scanner",
+  "version": "0.0.2",
+  "description": "",
+  "main": "build/index.js",
+  "dependencies": {
+    "ip": "^1.1.5",
+    "commander": "^8.1.0"
+  },
+  "devDependencies": {
+    "@types/ip": "^1.1.0",
+    "@types/node": "^16.4.5",
+    "@typescript-eslint/eslint-plugin": "^4.28.5",
+    "@typescript-eslint/parser": "^4.28.5",
+    "eslint": "^7.31.0",
+    "typescript": "^4.3.5"
+  },
+  "scripts": {
+    "watch": "tsc --watch",
+    "build": "rm -rf build && tsc"
+  },
+  "bin": {
+    "portscan": "./build/cli.js"
+  },
+  "author": "DragonCat",
+  "license": "MIT",
+  "files": [
+    "build"
+  ],
+  "types": "build/types/index.d.ts",
+  "homepage": "https://github.com/DragonCat1/tcp-port-scaner",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:DragonCat1/tcp-port-scaner.git"
+  },
+  "keywords": [
+    "port scan",
+    "scanner",
+    "tcp",
+    "network",
+    "cli",
+    "tool"
+  ]
+}
